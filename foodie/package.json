@@ -1,0 +1,40 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.3",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^8.3.2",
+    "mongoose": "^5.11.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/node": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node --experimental-modules src/index.js",
+    "start-dev": "nodemon --exec babel-node src/index migrate-mongo up",
+    "test": "mocha --serial -r esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://jira.cs.rutgers.edu:8445/scm/food/foodie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
